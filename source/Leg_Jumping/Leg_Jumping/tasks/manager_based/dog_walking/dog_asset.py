@@ -74,11 +74,11 @@ DOG_LOC_CFG = ArticulationCfg(
     actuators = {
         "leg_actuators": IdealPDActuatorCfg(
             joint_names_expr=[".*"],
+            effort_limit=70.0, # Nm, placeholder (if unset it falls back to the USD's 100, not effort_limit_sim)
             effort_limit_sim=70.0, # Nm
-            # TODO: Make these match real pd gains
             velocity_limit_sim=30.0, # rad/s
-            stiffness=30,
-            damping=2,
+            stiffness=150, # placeholder gains; kp 30 could not hold the dog up
+            damping=5,
         )
     },
 )
