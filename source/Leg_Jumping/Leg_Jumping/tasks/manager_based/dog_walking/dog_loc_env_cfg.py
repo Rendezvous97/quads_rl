@@ -149,9 +149,7 @@ class EventCfg:
             "pose_range": {
                 "x": (-0.1, 0.1),
                 "y": (-0.1, 0.1),
-                # "z": (0.35, 0.4),
-                # "z": (0.3, 0.35),
-                "z": (0.25, 0.30),
+                "z": (0.35, 0.40), # feet are ~0.4 m below the base; 0.25-0.30 spawned them inside the floor
                 "yaw": (-math.pi, math.pi),
                 # "yaw": (math.pi, math.pi),
                 # "yaw": (-math.pi/2, -math.pi/2),
